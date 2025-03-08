@@ -1,0 +1,57 @@
+{
+  "name": "instagram-engagement-mcp",
+  "version": "0.1.0",
+  "description": "Instagram Engagement Analysis MCP Server for analyzing engagement metrics and identifying leads",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "instagram-engagement-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "start": "node build/index.js",
+    "dev": "ts-node-esm src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "instagram",
+    "engagement",
+    "analytics",
+    "leads",
+    "demographics",
+    "social-media",
+    "marketing"
+  ],
+  "author": "Braden Olmstead",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradenolmstead/instagram-engagement-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bradenolmstead/instagram-engagement-mcp/issues"
+  },
+  "homepage": "https://github.com/bradenolmstead/instagram-engagement-mcp#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "axios": "^1.6.0",
+    "instagram-private-api": "^1.45.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
