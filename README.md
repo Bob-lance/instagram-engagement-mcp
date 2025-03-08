@@ -24,7 +24,7 @@ npm install -g instagram-engagement-mcp
 ### Option 2: Clone from GitHub
 
 ```bash
-git clone https://github.com/bradenolmstead/instagram-engagement-mcp.git
+git clone https://github.com/Bob-lance/instagram-engagement-mcp.git
 cd instagram-engagement-mcp
 npm install
 ```
