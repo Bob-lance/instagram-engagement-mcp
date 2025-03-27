@@ -1,0 +1,31 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - instagramUsername
+      - instagramPassword
+    properties:
+      instagramUsername:
+        type: string
+        description: Your Instagram username
+      instagramPassword:
+        type: string
+        description: Your Instagram password
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['build/index.js'],
+      env: {
+        INSTAGRAM_USERNAME: config.instagramUsername,
+        INSTAGRAM_PASSWORD: config.instagramPassword
+      }
+    })
+  exampleConfig:
+    instagramUsername: dummy_user
+    instagramPassword: dummy_password
