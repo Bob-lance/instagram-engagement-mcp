@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/instagram-engagement-mcp.svg)](https://www.npmjs.com/package/instagram-engagement-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![smithery badge](https://smithery.ai/badge/@Bob-lance/instagram-engagement-mcp)](https://smithery.ai/server/@Bob-lance/instagram-engagement-mcp)
 
 An MCP server that provides tools for analyzing Instagram engagement metrics, extracting demographic insights, and identifying potential leads from Instagram posts and accounts.
 
@@ -14,6 +15,14 @@ An MCP server that provides tools for analyzing Instagram engagement metrics, ex
 - **Generate Engagement Reports**: Create comprehensive reports with actionable insights
 
 ## Installation
+
+### Installing via Smithery
+
+To install Instagram Engagement Analysis for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Bob-lance/instagram-engagement-mcp):
+
+```bash
+npx -y @smithery/cli install @Bob-lance/instagram-engagement-mcp --client claude
+```
 
 ### Option 1: Install from npm
 
